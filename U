@@ -1,0 +1,17 @@
+def getBestNeighbour (tsp, neighbours):
+
+bestRouteLength = routeLength(tsp, neighbours[0])
+
+bestNeighbour = neighbours [e]
+
+for neighbour in neighbours:
+
+currentRouteLength = routeLength(tsp, neighbour)
+
+if currentRouteLength < bestRouteLength:
+
+bestRouteLength = currentRouteLength
+
+bestNeighbour = neighbour
+
+return bestNeighbour, bestRouteLength
